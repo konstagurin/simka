@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>simanella</title>
+		<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico"/>
+
+		<script type="text/javascript" src="js/phaser.min.js"></script>
+		<!-- <script type="text/javascript" src="debug/dist/phaser-debug.js"></script> -->
+		<script type="text/javascript" src="js/stage1.js"></script>
+		<script type="text/javascript" src="js/stage2.js"></script>
+		<script type="text/javascript" src="js/win.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script>
+			(function() {
+				var g = new Phaser.Game(600, 416, Phaser.AUTO, '.');
+				g.state.add('stage1', stage1);
+
+				g.state.add('menu', menuState);
+				g.state.add('stage1', stage1);
+				g.state.add('stage2', stage2);
+				g.state.add('win', win);
+
+				// g.state.start('stage1');
+				g.state.start('menu');
+			})();
+		</script>
+		<style type="text/css">
+			html {
+				width: 100%;
+			}
+
+			body {
+				width: 800px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id='game'></div>
+
+	</body>
+
+</html>
