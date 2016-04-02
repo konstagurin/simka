@@ -13,13 +13,14 @@ var stage1 = function(g) {
 
 stage1.prototype = {
     preload: function() {
+      this.game.load.audio('hello', 'assets/sound/hello.mp3');
 
       this.game.load.audio('soundTr', 'assets/sound/8bit.mp3');
 
-      //this.game.load.image('sk', 'assets/sky.png');
+      this.game.load.image('sk', 'assets/sky.png');
       this.game.load.image('pltfrm', 'assets/platform.png');
       this.game.load.image('str', 'assets/star.png');
-      this.game.load.spritesheet('dd', 'assets/dude.png', 32, 48);
+      this.game.load.spritesheet('dd', 'assets/dude.png', 50,75);
 
       this.game.load.spritesheet('baddie', 'assets/baddie.png', 32, 32);
 
@@ -30,17 +31,22 @@ stage1.prototype = {
     },
 
     create: function() {
+      this.game.world.setBounds(0, 0, 1920, 600);
 
+      this.game.add.sprite(0, 0, 'sk');
+      this.hi = this.game.add.audio('hello');
       this.st1music = this.game.add.audio('soundTr');
+      this.hi.play();
+
       this.st1music.play();
 
       this.game.physics.startSystem(Phaser.Physics.ARCADE);
-      //this.game.add.sprite(0, 0, 'sk');
+      this.game.add.sprite(0, 0, 'sk');
       pltfrm = this.game.add.group();
       pltfrm.enableBody = true;
 
       var grnd = pltfrm.create(0, this.game.world.height - 64, 'pltfrm');
-      grnd.scale.setTo(2, 2);
+      grnd.scale.setTo(13, 2);
       grnd.body.immovable = true;
 
       var ledge = pltfrm.create(400, 400, 'pltfrm');
@@ -50,15 +56,15 @@ stage1.prototype = {
 
       plr = this.game.add.sprite(32, this.game.world.height - 150, 'dd');
       this.game.physics.arcade.enable(plr);
+      this.game.camera.follow(plr);
 
       plr.body.bounce.y = 0.2;
       plr.body.gravity.y = 400;
-      plr.body.collideWorldBounds = true;
+      //plr.body.collideWorldBounds = true;
 
       plr.animations.add('left', [0, 1, 2, 3], 10, true);
       plr.animations.add('right', [5, 6, 7, 8], 10, true);
 
-      //	g.add.sprite(0, 0, 'str');
       str = this.game.add.group();
       str.enableBody = true;
       for (var i = 0; i < 12; i++) {
@@ -98,6 +104,7 @@ stage1.prototype = {
     },
 
     update: function() {
+      this.game.world.wrap(plr, 0, true);
 
 
       this.game.physics.arcade.collide(plr, pltfrm);
@@ -159,75 +166,19 @@ stage1.prototype = {
         plr.body.velocity.y = -350;
       }
 
-      // e1.position.x=this.game.world.width / 2;
-      //
-      // e1.body.velocity.x = 2.7;
-      // if (e1.position.x < this.game.world.width - 21) {
-      //   e1.body.velocity.x = 6.7;
-      //   e1.animations.play('right');
-      //   if (e1.position.x = this.game.world.width - 12) {
-      //     e1.body.velocity.x = -6.7;
-      //     e1.animations.play('left');
-      //   }}
-
-      while (this.right===true) {
-          e1.x += 3.1;
-        //e1.body.velocity.x = 117;
-        
-
-        // if (e1.position.x = this.game.world.width / 2) {
-        //   this.right = false;
-        // }
-        // console.log(this.right);
+      if (e1.position.x <= 0) {
+        e1.body.velocity.x = 100;
+        e1.animations.play('right');
+      } else if (e1.position.x > 210) {
+        e1.body.velocity.x = -100;
+        e1.animations.play('left');
       }
-
-      if (this.right === false) {
-        e1.body.velocity.x = -117;
-      }
-
-      //   e1.body.velocity.x = 117;
-      //
-      //    if (e1.position.x = this.game.world.widt/2) {
-      //
-      //      e1.body.velocity.x = -117;
-      // // e1.direction *= -1;
-      // }
-
-      //   body.velocity.x = 0;
-      //         e1.x += 5.1;
-      //         e1.direction == 1}
-      //
-      //         else{e1.direction *= -1;
-      //         e1.x += -5.1;}
-      //   if (e1.position.x < this.game.world.width / 12) {
-      //     e1.animations.play('right');
-      //   }
-      //
-      // } else if (e1.position.x > this.game.world.width / 2) {
-      //   e1.x += -0.1;
-      //   if (e1.position.x > this.game.world.width - 30) {
-      //     e1.animations.play('left');
-      //   }
-
-
-
-      // else if(e1.position.x > this.game.world.width-40 )  {
-      //       e1.body.velocity.x = -2.2;
-      //       e1.animations.play('left');
-      //   }
-      // if (e1.position.x > this.game.world.width/ 12 )
-
-      //  else if (e1.position.x > this.game.world.width / 2)
-      //   e1.x += -0.2;
-      //   if (e1.position.x > this.game.world.width - 30) {
-      //     e1.animations.play('left');
-      //   }
 
 
 
     },
     render: function() {
-      this.game.debug.spriteInfo(e1, 32, 32);
+      this.game.debug.spriteInfo(plr, 32, 32);
     }
   }
   // function init() {
