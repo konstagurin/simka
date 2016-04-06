@@ -15,7 +15,7 @@
 		<script>
 			(function() {
 				//  var g = new Phaser.Game(600, 416, Phaser.AUTO, '.');
-				 var g = new Phaser.Game(800, 600, Phaser.AUTO, '.');
+				 var g = new Phaser.Game(800, 600, Phaser.AUTO, '');
 
 				g.state.add('stage1', stage1);
 
@@ -25,7 +25,7 @@
 				g.state.add('win', win);
 
 				// g.state.start('stage1');
-				g.state.start('menu');
+				g.state.start('stage2');
 			})();
 		</script>
 		<style type="text/css">

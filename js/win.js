@@ -20,6 +20,8 @@ win.prototype = {
    });
     // gameOverTitle.anchor.setTo(0.5, 0.5);
     var restButton = this.game.add.button(400, 390, "gameoverB", this.playTheGame, this);
+    restButton.scale.setTo(0.7, 0.7);
+
     restButton.anchor.setTo(0.5, 0.5);
      restButton.inputEnabled = true;
   },

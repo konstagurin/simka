@@ -1,5 +1,5 @@
 var menuState = function(g) {
-  var font2, music, crsr, wasd, button, onOver = false;
+  var font2, music, crsr, wasd, button, onOver = false, start2;
 };
 
 
@@ -19,6 +19,7 @@ menuState.prototype = {
 
     this.game.load.image('sk', 'assets/menuB2.png');
     this.game.load.image('start', 'assets/download3.png');
+    this.game.load.image('start2', 'assets/begin.png');
 
     //  this.game.load.image('van', 'assets/download.png');
     //this.game.load.image('knightHawks', 'assets/f.png');
@@ -39,7 +40,7 @@ menuState.prototype = {
 
 
 
-    var backGr=this.game.add.sprite(0, 0, 'sk');
+    var backGr = this.game.add.sprite(0, 0, 'sk');
     this.game.physics.startSystem(Phaser.Physics.ARCADE);
 
     this.sprite = this.game.add.sprite(60, 60, 'sim');
@@ -51,33 +52,55 @@ menuState.prototype = {
     this.pud.anchor.set(0.5);
     this.ved.anchor.set(0.5);
 
-    this.ved2=this.game.add.sprite(740, 60, 'ved2');
+    this.ved2 = this.game.add.sprite(740, 60, 'ved2');
     this.ved2.anchor.set(0.5);
-    this.ved2.visible=false;
+    this.ved2.visible = false;
     // this.vano.anchor.set(0.5);
 
-
-    this.button = this.game.add.button(400,300, 'button', this.actionOnClick, this, 1, 0, 2);
+    this.button = this.game.add.button(400, 300, 'button', this.actionOnClick, this, 1, 0, 2);
     this.button.anchor.set(0.5);
+
+    this.strt2 = this.game.add.button(400, 300, 'start2');
+    this.strt2.visible = false;
+    this.strt2.anchor.set(0.5);
 
     this.button.onInputOver.add(over, this);
     this.button.onInputOut.add(out, this);
     this.button.onInputUp.add(up, this);
+    this.strt2.onInputUp.add(up2, this);
+
+
+    function up2() {
+        this.music.stop();
+
+      this.game.state.start('stage1');
+
+    }
 
     function up() {
-    this.intro.stop();
-     this.button.visible= false;
-     this.ved.visible= false;
-     this.ved2.visible=true;
+      this.intro.stop();
+      this.button.visible = false;
+      this.ved.visible = false;
+      this.ved2.visible = true;
 
 
-     this.music.play();
-     this.onOver = true;
-     this.strt=this.game.add.sprite(400,300, 'start');
-     this.strt.anchor.set(0.5)
-     backGr.visible =! backGr.visible;
+
+      this.music.play();
+      this.onOver = true;
+      this.strt = this.game.add.sprite(400, 300, 'start');
 
 
+      this.strt.anchor.set(0.5);
+
+      backGr.visible = !backGr.visible;
+
+
+
+      var that = this;
+      setTimeout(function() {
+        that.strt2.visible = true;
+        that.strt.visible = false;
+      }, 2000);
 
       // this.music.stop();
       // this.game.state.start('stage1');
@@ -154,18 +177,18 @@ menuState.prototype = {
 
   update: function() {
 
-    if (this.onOver ) {
-        this.font2.tint = Math.random() * 0xFFFFFF;
+    if (this.onOver) {
+      this.font2.tint = Math.random() * 0xFFFFFF;
 
     }
 
 
 
-// function t() {
-//   console.log(33);
-//   this.font2.tint = Math.random() * 0xFFFFFF;
-//
-// };
+    // function t() {
+    //   console.log(33);
+    //   this.font2.tint = Math.random() * 0xFFFFFF;
+    //
+    // };
     //   this.font2.tint = Math.random() * 0xFFFFFF;
     // }
 
@@ -179,10 +202,10 @@ menuState.prototype = {
 
 
     //
-    if (this.crsr.left.isDown||this.crsr.right.isDown||this.crsr.up.isDown||this.wasd.up.isDown||this.wasd.left.isDown||this.wasd.right.isDown||this.wasd.spaseBar.isDown) {
-      this.music.stop();
-      this.game.state.start('stage1');
-    }
+    // if (this.crsr.left.isDown || this.crsr.right.isDown || this.crsr.up.isDown || this.wasd.up.isDown || this.wasd.left.isDown || this.wasd.right.isDown || this.wasd.spaseBar.isDown) {
+    //   this.music.stop();
+    //   this.game.state.start('stage1');
+    // }
   }
 }
 
