@@ -1,34 +1,17 @@
-// var g = new Phaser.Game(800, 555, Phaser.AUTO, 'game', {
-//   preload: preload,
-//   create: create,
-//   update: update,
-//   init: init
-//
-// });
 var stage1 = function(g) {
     var pltfrm, plr, crsr, wasd, str, e1, e2, scoreTxt, liveTxt, music, zyx;
 };
-
-
 stage1.prototype = {
     preload: function() {
         this.game.load.audio('hello', 'assets/sound/hello.mp3');
-
         this.game.load.audio('soundTr', 'assets/sound/8bit.mp3');
-
-        this.game.load.image('sk', 'assets/sky.png');
-        this.game.load.image('pltfrm', 'assets/platform.png');
-        this.game.load.image('pltfrmG', 'assets/platformG.png');
-
-        this.game.load.image('str', 'assets/star.png');
-        this.game.load.spritesheet('dd', 'assets/dude.png', 50, 75);
-
-        this.game.load.spritesheet('baddie', 'assets/baddie.png', 32, 32);
-
-
-        //this.game.load.audio('soundTr', ['assets/8bit.mp3', 'assets/audio/bodenstaendig_2000_in_rock_4bit.ogg']);
-
-
+        this.game.load.image('sk', 'assets/s1/sky.png');
+        this.game.load.image('pltfrm', 'assets/s1/platform.png');
+        this.game.load.image('pltfrmG', 'assets/s1/platformG.png');
+        this.game.load.image('str', 'assets/s1/star.png');
+        this.game.load.spritesheet('dd', 'assets/s1/dude.png', 50, 75);
+        this.game.load.spritesheet('baddie', 'assets/s1/baddie.png', 32, 32);
+      //  this.game.load.audio('soundTr', 'assets/audio/?.mp3');
     },
 
     create: function() {
@@ -72,7 +55,6 @@ stage1.prototype = {
         for (var i = 0; i < 12; i++) {
             var ostr = str.create(i * 70, 0, 'str');
             ostr.scale.setTo(0.5, 0.5);
-
             ostr.body.gravity.y = 166;
             ostr.body.bounce.y = 0.3 + Math.random() * 0.2;
         };
@@ -125,10 +107,6 @@ stage1.prototype = {
 
     update: function() {
         this.game.world.wrap(plr, 0, true);
-        //this.game.world.wrap(zyx, 0, true);
-
-
-
         this.game.physics.arcade.collide(plr, pltfrm);
         this.game.physics.arcade.collide(str, pltfrm);
         this.game.physics.arcade.collide(e1, pltfrm);
@@ -140,15 +118,6 @@ stage1.prototype = {
         this.game.physics.arcade.overlap(plr, e2, restart, null, this);
 
 
-        if (lives === 0) {
-            this.game.state.start('win');
-            this.st1music.stop();
-
-        } else {
-            scoreTxt.text = 'Score: ' + score;
-            //  liveTxt.text = 'Lives: ' + lives;
-        }
-
         function collStr(plr, str) {
             str.kill();
             score += 10;
@@ -159,14 +128,10 @@ stage1.prototype = {
         function restart(plr, e1) {
             lives -= 1;
 
-            if (score === 0) {
-                // this.st1music.destroy();
-                // this.game.cache.removeSound('wizball');
+            if (score == 0) {
                 this.st1music.stop();
-                this.game.state.start('win');
-
-                // var novyiHui = new stage1();
-                // novyiHui.create();
+                this.game.world.removeAll();
+                this.create()
             } else {
                 setTimeout(function() {
                     score = 0;
@@ -174,21 +139,24 @@ stage1.prototype = {
                 }, 400);
             }
         }
-
-
         plr.body.velocity.x = 0;
         zyx.body.velocity.x = 0;
 
-
         if (crsr.left.isDown || wasd.left.isDown) {
-            plr.body.velocity.x = -150;
-            plr.animations.play('left');
-            zyx.body.velocity.x = 5;
+
+            if (plr.position.x < 4) {
+                plr.body.velocity.x = 0;
+            } else {
+                plr.body.velocity.x = -150;
+                plr.animations.play('left');
+                zyx.body.velocity.x = 5;
+            }
 
         } else if (crsr.right.isDown || wasd.right.isDown) {
             plr.body.velocity.x = 150;
             plr.animations.play('right');
             zyx.body.velocity.x = -5;
+
         } else {
             {
                 plr.animations.stop();
@@ -196,21 +164,21 @@ stage1.prototype = {
             }
         }
         if ((crsr.up.isDown || wasd.up.isDown || wasd.spaseBar.isDown) && plr.body.touching.down) {
-            plr.body.velocity.y = -350;
+            plr.body.velocity.y = -370;
         }
 
         if (e1.position.x <= 0) {
-            e1.body.velocity.x = 140;
+            e1.body.velocity.x = 160;
             e1.animations.play('right');
         } else if (e1.position.x > 210) {
-            e1.body.velocity.x = -140;
+            e1.body.velocity.x = -160;
             e1.animations.play('left');
         };
         if (e2.position.x <= 400) {
-            e2.body.velocity.x = 120;
+            e2.body.velocity.x = 170;
             e2.animations.play('right');
         } else if (e2.position.x > 790) {
-            e2.body.velocity.x = -120;
+            e2.body.velocity.x = -170;
             e2.animations.play('left');
         }
 

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0f7437b4-28b6-4f5a-9166-b40d5f51b307" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Screenshot_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/baddie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/begin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/download.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/download3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/dude.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f.GIF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/firstaid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/font/shortStack.fnt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/menuB2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/platform.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/platformG.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/pud.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/s2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/si.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/sky.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/star2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/vedma.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/vedma0.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/st2/stage2sml.png" afterPath="$PROJECT_DIR$/assets/st2/stage2sml.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/menu.js" afterPath="$PROJECT_DIR$/js/menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/stage1.js" afterPath="$PROJECT_DIR$/js/stage1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/stage2.js" afterPath="$PROJECT_DIR$/js/stage2.js" />
+    </list>
+    <ignored path="test.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="test" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8508353">
+              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js/stage2.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="63" />
+    <option name="width" value="768" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RunManager" selected="Node.js.stage2.js">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/test/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="stage2.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="stage2.js" working-dir="$PROJECT_DIR$/js">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.stage2.js" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.stage2.js" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f7437b4-28b6-4f5a-9166-b40d5f51b307" name="Default" comment="" />
+      <created>1460623105573</created>
+      <option name="number" value="Default" />
+      <updated>1460623105573</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="63" y="0" width="768" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30452126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896304" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/stage2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.274463">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1460623460874" expanded="true" signature="25:143" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="206:7253" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="232:958" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="984:4350" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="1129:1174" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="1180:1226" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="1543:1887" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="2244:2290" placeholder="{&quot;x&quot;: 0...}" />
+            <marker date="1460623460874" expanded="true" signature="2391:2815" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="2463:2805" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="2853:2917" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="3445:3734" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="3787:3853" placeholder="{&quot;fintSize&quot;: '30px'...}" />
+            <marker date="1460623460874" expanded="true" signature="3903:3969" placeholder="{&quot;fintSize&quot;: '30px'...}" />
+            <marker date="1460623460874" expanded="true" signature="4060:4290" placeholder="{&quot;x&quot;: 600...}" />
+            <marker date="1460623460874" expanded="true" signature="4165:4213" placeholder="{&quot;color&quot;: '#7f7f7f'...}" />
+            <marker date="1460623460874" expanded="true" signature="4232:4280" placeholder="{&quot;color&quot;: '#1b7fcc'...}" />
+            <marker date="1460623460874" expanded="true" signature="4387:4477" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="4501:4597" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="4623:7251" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="5034:5073" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="5104:5149" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="5155:5201" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="5240:6026" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="5276:6016" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="5492:6002" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="5585:5671" placeholder="{&quot;x&quot;: 1.3...}" />
+            <marker date="1460623460874" expanded="true" signature="5757:5976" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="6049:6109" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="6148:6712" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="6184:6702" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="6411:6681" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="6602:6663" placeholder="//..." />
+            <marker date="1460623460874" expanded="true" signature="6767:6822" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="6875:6929" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="7021:7168" placeholder="{...}" />
+            <marker date="1460623460874" expanded="true" signature="7174:7245" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8508353">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

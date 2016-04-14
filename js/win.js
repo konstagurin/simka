@@ -27,6 +27,8 @@ win.prototype = {
   },
   playTheGame: function() {
     this.music.stop();
+    this.game.world.removeAll();
+
     this.game.state.start("menu");
   }
 }
